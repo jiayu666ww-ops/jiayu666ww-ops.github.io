@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f3f1eb" />
+
+    <title>李佳蔚｜产品经理 · 系统产品与云平台</title>
+    <meta
+      name="description"
+      content="李佳蔚的产品作品集：软件工程背景，聚焦云平台、运维工具与数据产品，把复杂系统转化为清晰、可用、可落地的产品。"
+    />
+    <meta name="author" content="李佳蔚" />
+    <link rel="canonical" href="https://jiayu666ww-ops.github.io/" />
+    <link rel="icon" href="avatar.jpg" type="image/jpeg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="李佳蔚｜产品经理" />
+    <meta
+      property="og:description"
+      content="把复杂系统，变成可用、可落地的产品。"
+    />
+    <meta property="og:url" content="https://jiayu666ww-ops.github.io/" />
+    <meta
+      property="og:image"
+      content="https://jiayu666ww-ops.github.io/og.png"
+    />
+    <meta property="og:image:alt" content="李佳蔚产品经理个人作品集封面" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+      } catch (_) {}
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "李佳蔚",
+        "alternateName": "Jiayu Li",
+        "jobTitle": "产品经理",
+        "url": "https://jiayu666ww-ops.github.io/",
+        "image": "https://jiayu666ww-ops.github.io/avatar.jpg",
+        "email": "mailto:2315116066@qq.com",
+        "sameAs": ["https://github.com/jiayu666ww-ops"],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "重庆邮电大学"
+        },
+        "knowsAbout": [
+          "产品设计",
+          "云平台",
+          "运维工具",
+          "数据分析",
+          "用户体验",
+          "项目管理"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header" data-header>
+      <div class="shell nav-wrap">
+        <a class="brand" href="#top" aria-label="返回首页">
+          <span class="brand-mark" aria-hidden="true">L</span>
+          <span class="brand-copy">
+            <strong>李佳蔚</strong>
+            <small>PRODUCT MANAGER</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="打开导航"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          data-menu-toggle
+        >
+          <span></span><span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="主要导航" data-nav>
+          <a href="#work">案例</a>
+          <a href="#experience">经历</a>
+          <a href="#capabilities">能力</a>
+          <a href="#contact">联系</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-label="切换深浅主题" data-theme-toggle>
+          <span class="theme-glyph" aria-hidden="true">◐</span>
+          <span data-theme-label>深色</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid shell">
+          <div class="hero-copy" data-reveal>
+            <div class="eyebrow">
+              <span class="status-dot" aria-hidden="true"></span>
+              PRODUCT · CLOUD · OPS · DATA
+            </div>
+            <h1 id="hero-title">
+              把复杂系统，<br />
+              变成<span class="highlight">可用、可落地</span>的产品。
+            </h1>
+            <p class="hero-lede">
+              我是李佳蔚，一名有软件工程背景的产品经理。专注云平台、运维工具与数据产品，
+              从真实场景出发，把分散需求梳理成清晰流程，把产品方案推进到稳定交付。
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">
+                查看产品案例
+                <span aria-hidden="true">↘</span>
+              </a>
+              <a class="button button-ghost" href="mailto:2315116066@qq.com">
+                和我聊聊
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="hero-meta" aria-label="个人信息">
+              <span>重庆邮电大学 · 软件工程</span>
+              <span>南京 / 可远程协作</span>
+            </div>
+          </div>
+
+          <aside class="profile-card" aria-label="李佳蔚个人资料" data-reveal>
+            <div class="profile-visual">
+              <div class="profile-grid" aria-hidden="true"></div>
+              <img
+                src="avatar.jpg"
+                width="480"
+                height="640"
+                alt="李佳蔚职业照"
+              />
+              <div class="floating-label label-top">BUILDING USEFUL THINGS</div>
+              <div class="floating-label label-bottom">01 / PRODUCT</div>
+            </div>
+            <div class="profile-info">
+              <div>
+                <p class="mono-label">CURRENT FOCUS</p>
+                <h2>系统型产品</h2>
+              </div>
+              <ul class="profile-tags" aria-label="专业领域">
+                <li>云平台</li>
+                <li>运维管理</li>
+                <li>数据可视化</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+        <div class="hero-marquee" aria-hidden="true">
+          <div>
+            DISCOVER <span>·</span> DEFINE <span>·</span> DESIGN <span>·</span> DELIVER
+            <span>·</span> DISCOVER <span>·</span> DEFINE <span>·</span> DESIGN
+            <span>·</span> DELIVER
+          </div>
+        </div>
+      </section>
+
+      <section class="proof" aria-labelledby="proof-title">
+        <div class="shell">
+          <div class="section-intro compact" data-reveal>
+            <p class="section-kicker">IMPACT / 影响</p>
+            <h2 id="proof-title">用结果说话。</h2>
+          </div>
+          <dl class="metric-grid">
+            <div class="metric" data-reveal>
+              <dt>客户满意度</dt>
+              <dd><strong>94.3</strong><span>%</span></dd>
+              <p>云平台上线后的客户反馈</p>
+            </div>
+            <div class="metric" data-reveal>
+              <dt>日均访问提升</dt>
+              <dd><strong>52</strong><span>%</span></dd>
+              <p>关键模块优化后使用增长</p>
+            </div>
+            <div class="metric" data-reveal>
+              <dt>异常定位耗时</dt>
+              <dd><strong>2h</strong><span>→</span><strong>15m</strong></dd>
+              <p>电芯健康诊断系统落地</p>
+            </div>
+            <div class="metric" data-reveal>
+              <dt>履约效率</dt>
+              <dd><strong>2</strong><span>×</span></dd>
+              <p>运维日志填写效率提升</p>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="work section" id="work" aria-labelledby="work-title">
+        <div class="shell">
+          <div class="section-intro" data-reveal>
+            <p class="section-kicker">SELECTED WORK / 代表案例</p>
+            <div class="section-heading-row">
+              <h2 id="work-title">从问题现场，到产品闭环。</h2>
+              <p>
+                三个案例分别聚焦平台迭代、智能诊断与内部工具，展示我如何连接用户、业务与研发。
+              </p>
+            </div>
+          </div>
+
+          <article class="case-card case-blue" data-reveal>
+            <header class="case-head">
+              <div>
+                <span class="case-index">CASE 01</span>
+                <span class="case-type">云平台 · 平台迭代</span>
+              </div>
+              <p class="case-time">2024.07 — 至今</p>
+            </header>
+            <div class="case-body">
+              <div class="case-main">
+                <p class="mono-label">EASYSTORAGE</p>
+                <h3>让储能场站从“看见数据”走向“做出判断”。</h3>
+                <p class="case-summary">
+                  面向公司海内外业务部署，负责云平台运行监控、收益分析、电价预测与权限管理等核心模块，
+                  将分散的用户问题转化为结构化需求，并协同 UI、后端和测试完成持续交付。
+                </p>
+                <ul class="case-points">
+                  <li>主导收益、电价、数据可视化等模块原型与 PRD，输出 10+ 结构化需求</li>
+                  <li>建立 Bug 追踪台账，推动修复 30+ 关键问题，修复周期缩短约 35%</li>
+                  <li>提出“电芯异常 → 舱号定位”展示优化，进入平台 V2.1</li>
+                </ul>
+              </div>
+              <aside class="case-outcome">
+                <span>OUTCOME</span>
+                <strong>94.3%</strong>
+                <p>客户满意度</p>
+                <div class="outcome-rule"></div>
+                <strong>+52%</strong>
+                <p>系统日均访问量</p>
+              </aside>
+            </div>
+            <footer class="case-footer">
+              <span>用户研究</span><span>PRD</span><span>原型设计</span><span>跨团队协作</span><span>版本管理</span>
+            </footer>
+          </article>
+
+          <article class="case-card case-acid" data-reveal>
+            <header class="case-head">
+              <div>
+                <span class="case-index">CASE 02</span>
+                <span class="case-type">数据产品 · 智能诊断</span>
+              </div>
+              <p class="case-time">核心模块优化</p>
+            </header>
+            <div class="case-body">
+              <div class="case-main">
+                <p class="mono-label">BATTERY HEALTH</p>
+                <h3>把数百颗电芯的排查，从人工逐项变成智能筛选。</h3>
+                <p class="case-summary">
+                  围绕电压、电流、温度等多维测点数据，参与构建电芯健康诊断模块。
+                  从健康评分逻辑、风险映射到交互视图，让一线运维快速定位需要更换或补电的电芯。
+                </p>
+                <ul class="case-points">
+                  <li>参与梳理健康评分逻辑，与算法协作设计电芯风险等级映射</li>
+                  <li>将原始表格重构为“按仓—按等级”双层视图，降低理解负担</li>
+                  <li>设计“异常点—工单—派单追踪”联动流程，推动能力进入云平台主功能</li>
+                </ul>
+              </div>
+              <aside class="case-outcome">
+                <span>OUTCOME</span>
+                <strong>2h → 15m</strong>
+                <p>平均异常定位耗时</p>
+                <div class="outcome-rule"></div>
+                <strong>8×</strong>
+                <p>定位效率约提升</p>
+              </aside>
+            </div>
+            <footer class="case-footer">
+              <span>数据分析</span><span>信息架构</span><span>交互设计</span><span>算法协作</span><span>流程闭环</span>
+            </footer>
+          </article>
+
+          <article class="case-card case-ink" data-reveal>
+            <header class="case-head">
+              <div>
+                <span class="case-index">CASE 03</span>
+                <span class="case-type">内部工具 · 运维履约</span>
+              </div>
+              <p class="case-time">0 → 1</p>
+            </header>
+            <div class="case-body">
+              <div class="case-main">
+                <p class="mono-label">OPS LOG</p>
+                <h3>让碎片化运维信息，形成可记录、可查询、可回溯的流程链。</h3>
+                <p class="case-summary">
+                  面向现场运维信息分散、履约流转低效的问题，独立完成需求调研、原型与需求文档，
+                  建立统一字段、状态分组和查询回溯机制。
+                </p>
+                <ul class="case-points">
+                  <li>完成 4 轮一线访谈，抽象“日志五要素”字段与状态模型</li>
+                  <li>独立设计日志总览、提交与查询三大模块，输出 36 份测试用例</li>
+                  <li>跟进 4 轮版本反馈，保障 6 个主要场站按期上线</li>
+                </ul>
+              </div>
+              <aside class="case-outcome">
+                <span>OUTCOME</span>
+                <strong>2×</strong>
+                <p>日志填写效率</p>
+                <div class="outcome-rule"></div>
+                <strong>6</strong>
+                <p>主要场站覆盖</p>
+              </aside>
+            </div>
+            <footer class="case-footer">
+              <span>0—1 产品</span><span>用户访谈</span><span>流程设计</span><span>功能测试</span><span>上线迭代</span>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience section" id="experience" aria-labelledby="experience-title">
+        <div class="shell experience-layout">
+          <div class="section-intro sticky-intro" data-reveal>
+            <p class="section-kicker">EXPERIENCE / 经历</p>
+            <h2 id="experience-title">在真实业务里，持续把事做成。</h2>
+            <p>
+              从软件工程出发，逐步建立面向系统型产品的完整工作方法：理解业务、定义问题、协同实现、验证结果。
+            </p>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline-item" data-reveal>
+              <div class="timeline-marker" aria-hidden="true">01</div>
+              <div class="timeline-card">
+                <div class="timeline-topline">
+                  <p>江苏林洋技术有限公司 · 南京</p>
+                  <time>2024.07 — 至今</time>
+                </div>
+                <h3>产品助理工程师</h3>
+                <p>
+                  负责 Easystorage 储能云平台的产品设计与迭代管理，覆盖运行监控、收益分析、
+                  电价预测、权限与内部运维工具；协同研发、测试与外部设计团队推进交付。
+                </p>
+                <div class="timeline-tags"><span>B2B 平台</span><span>储能</span><span>跨团队交付</span></div>
+              </div>
+            </li>
+            <li class="timeline-item" data-reveal>
+              <div class="timeline-marker" aria-hidden="true">02</div>
+              <div class="timeline-card">
+                <div class="timeline-topline">
+                  <p>中国电信 · 广州</p>
+                  <time>2023.08 — 2024.07</time>
+                </div>
+                <h3>产品助理</h3>
+                <p>
+                  参与基于 OpenStack 的边缘云运维平台部署与站点协同，负责资源调度流程理解、
+                  平台接入测试、权限梳理与版本归档；同时承担校园业务产品运营闭环。
+                </p>
+                <div class="timeline-tags"><span>OpenStack</span><span>边缘云</span><span>站点运营</span></div>
+              </div>
+            </li>
+            <li class="timeline-item" data-reveal>
+              <div class="timeline-marker" aria-hidden="true">03</div>
+              <div class="timeline-card">
+                <div class="timeline-topline">
+                  <p>亚信科技 · 重庆</p>
+                  <time>2023.01 — 2023.06</time>
+                </div>
+                <h3>产品实习生</h3>
+                <p>
+                  参与某政务单位 Web + App 多端业务支撑系统设计，梳理配置、审核与发布流程，
+                  对 20+ 功能节点进行交互走查，并跟进验收测试与问题回归。
+                </p>
+                <div class="timeline-tags"><span>政企业务</span><span>多端流程</span><span>验收测试</span></div>
+              </div>
+            </li>
+            <li class="timeline-item education-item" data-reveal>
+              <div class="timeline-marker" aria-hidden="true">04</div>
+              <div class="timeline-card">
+                <div class="timeline-topline">
+                  <p>重庆邮电大学</p>
+                  <time>2019.09 — 2023.06</time>
+                </div>
+                <h3>软件工程 · 本科</h3>
+                <p>
+                  系统学习数据库、数据结构、Java、C++、大数据挖掘、人工智能导论、
+                  人机交互与用户体验设计，为复杂平台产品建立技术理解基础。
+                </p>
+                <div class="timeline-tags"><span>软件工程</span><span>人机交互</span><span>数据基础</span></div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="capabilities section" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="shell">
+          <div class="section-intro" data-reveal>
+            <p class="section-kicker">CAPABILITIES / 能力</p>
+            <div class="section-heading-row">
+              <h2 id="capabilities-title">既看用户，也懂系统。</h2>
+              <p>把产品判断落实为文档、原型、流程、测试和可衡量的上线结果。</p>
+            </div>
+          </div>
+
+          <div class="capability-grid">
+            <article class="capability-card" data-reveal>
+              <span class="capability-number">01</span>
+              <h3>发现与定义</h3>
+              <p>用户访谈、竞品分析、场景拆解、多角色需求梳理、产品边界定义。</p>
+            </article>
+            <article class="capability-card" data-reveal>
+              <span class="capability-number">02</span>
+              <h3>结构与设计</h3>
+              <p>信息架构、流程设计、原型、PRD、数据视图与复杂状态表达。</p>
+            </article>
+            <article class="capability-card" data-reveal>
+              <span class="capability-number">03</span>
+              <h3>协同与交付</h3>
+              <p>研发对接、版本节奏、测试用例、Bug 追踪、上线培训与知识沉淀。</p>
+            </article>
+            <article class="capability-card" data-reveal>
+              <span class="capability-number">04</span>
+              <h3>技术理解</h3>
+              <p>平台模块分层、接口协作、权限系统、OpenStack、数据结构与基础开发逻辑。</p>
+            </article>
+          </div>
+
+          <div class="tool-stack" data-reveal>
+            <div>
+              <p class="mono-label">PRODUCT</p>
+              <p>Figma · Axure RP · XMind · ProcessOn · 墨刀 · 飞书文档</p>
+            </div>
+            <div>
+              <p class="mono-label">TEST & DELIVERY</p>
+              <p>Postman · Fiddler · Jira · 禅道 · 功能测试 · Bug 追踪</p>
+            </div>
+            <div>
+              <p class="mono-label">DOMAIN</p>
+              <p>云平台 · 运维管理 · 权限系统 · 收益预测 · 数据可视化</p>
+            </div>
+          </div>
+
+          <aside class="side-project" data-reveal>
+            <div>
+              <p class="section-kicker">SIDE PROJECT / 内容实验</p>
+              <h3>小鱼爱学习</h3>
+            </div>
+            <p>
+              独立策划并剪辑教育类短视频 10+ 条，单条播放量突破 10 万；
+              同期运营微信公众号“不二PM”，用内容点击—互动—引流路径验证用户增长假设。
+            </p>
+            <strong>100K+ <span>单条内容浏览</span></strong>
+          </aside>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-panel" data-reveal>
+          <div class="contact-orbit orbit-one" aria-hidden="true"></div>
+          <div class="contact-orbit orbit-two" aria-hidden="true"></div>
+          <p class="section-kicker">LET'S BUILD / 一起做点有用的事</p>
+          <h2 id="contact-title">如果你也在解决复杂问题，<br />我们应该聊聊。</h2>
+          <p>
+            欢迎交流产品机会、云平台与运维场景、数据产品，或任何值得被重新设计的复杂流程。
+          </p>
+          <div class="contact-actions">
+            <a class="button button-light" href="mailto:2315116066@qq.com">
+              发送邮件 <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="button button-outline-light"
+              href="https://github.com/jiayu666ww-ops"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <a class="contact-email" href="mailto:2315116066@qq.com">2315116066@qq.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <p>© <span data-year>2026</span> 李佳蔚</p>
+        <p>Designing clarity for complex systems.</p>
+        <a href="#top">回到顶部 ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
