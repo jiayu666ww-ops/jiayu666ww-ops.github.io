@@ -1,0 +1,159 @@
+.casebook {
+  --case-ink: #20201c;
+  --case-red: #bb3122;
+  --case-muted: #595850;
+  --case-line: #cbc9bf;
+  color: var(--case-ink);
+  padding-block: clamp(3.5rem, 6vw, 7rem);
+}
+.casebook-header, .casebook-tabs, .casebook-panel {
+  display: flex;
+}
+.casebook-header {
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  border-bottom: 2px solid var(--case-ink);
+  padding-bottom: 1.25rem;
+}
+.casebook-header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3.8vw, 3.75rem);
+  font-weight: 700;
+  letter-spacing: -.055em;
+  line-height: 1.2;
+}
+.casebook-tabs { gap: .2rem; flex-wrap: wrap; }
+.casebook-tabs a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  padding: .55rem clamp(.8rem, 1.7vw, 1.5rem);
+  color: var(--case-ink);
+  border: 1px solid var(--case-line);
+  text-decoration: none;
+  font-size: .94rem;
+  line-height: 1.4;
+}
+.casebook-tabs a:hover { border-color: var(--case-ink); }
+.casebook-tabs a[aria-selected="true"] {
+  color: #fff;
+  background: var(--case-ink);
+  border-color: var(--case-ink);
+}
+.casebook :is(a, summary, [role="tabpanel"]):focus-visible {
+  outline: 2px solid var(--case-red);
+  outline-offset: 3px;
+}
+.casebook-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr);
+  gap: clamp(1.7rem, 6.2vw, 6.6rem);
+  align-items: start;
+  padding-block: clamp(1.8rem, 3.5vw, 3.5rem);
+  border-bottom: 1px solid var(--case-line);
+  scroll-margin-top: 6rem;
+}
+.casebook-panel[hidden] { display: none; }
+.casebook .casebook-meta {
+  margin: 0 0 1.1rem;
+  color: var(--case-muted);
+  font-size: .8rem;
+  letter-spacing: .04em;
+  line-height: 1.6;
+}
+.casebook-meta span { padding-inline: .35rem; color: var(--case-red); }
+.casebook-copy h3 {
+  font-size: clamp(2.05rem, 3.6vw, 3.8rem);
+  line-height: 1.22;
+  letter-spacing: -.05em;
+  font-weight: 650;
+  margin: 0 0 1.05rem;
+}
+.casebook-copy > p:last-child, .casebook-detail p {
+  color: var(--case-muted);
+  font-size: 1rem;
+  line-height: 1.85;
+  margin: 0;
+}
+.casebook-metrics, .casebook-explorer {
+  background: #efeee8;
+  padding: clamp(1.25rem, 2.25vw, 2.15rem);
+  margin: 0;
+}
+.casebook .casebook-legend, .casebook-metrics figcaption {
+  color: var(--case-ink);
+  margin: 0 0 .85rem;
+  font-size: .85rem;
+  font-weight: 650;
+  line-height: 1.65;
+}
+.casebook-meter {
+  display: grid;
+  grid-template-columns: minmax(4rem, 1fr) auto;
+  align-items: baseline;
+  row-gap: .3rem;
+  padding-block: .13rem .7rem;
+}
+.casebook-meter:last-child { padding-bottom: 0; }
+.casebook-meter-label { color: var(--case-muted); font-size: .84rem; }
+.casebook-value {
+  font: 500 clamp(2.7rem, 4.4vw, 4.2rem)/1.16 "Arial", sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.055em;
+}
+.casebook-value small {
+  font: 500 .95rem/1.5 system-ui, sans-serif;
+  letter-spacing: 0;
+}
+.casebook-bar {
+  grid-column: 1/-1;
+  height: 5px;
+  background-color: var(--case-ink);
+}
+.casebook-bar-after {
+  background: linear-gradient(to right, var(--case-red) 12.5%, #d8d6cb 12.5%);
+}
+.casebook-meter-after .casebook-value { color: var(--case-red); }
+.casebook-explorer details { border-top: 1px solid var(--case-line); }
+.casebook-explorer details:last-child { border-bottom: 1px solid var(--case-line); }
+.casebook-explorer summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  list-style: none;
+  cursor: pointer;
+  padding: .85rem .08rem;
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.casebook-explorer summary::-webkit-details-marker { display: none; }
+.casebook-explorer summary::after {
+  content: "+";
+  font: 400 1.25rem/1 sans-serif;
+  color: var(--case-red);
+}
+.casebook-explorer details[open] summary::after { content: "−"; }
+.casebook-explorer summary:hover, .casebook-explorer details[open] summary {
+  color: var(--case-red);
+}
+.casebook-detail { padding: .1rem 0 1.1rem; }
+.casebook-detail strong {
+  font-size: 1.04rem;
+  font-weight: 650;
+  line-height: 1.65;
+}
+.casebook-detail p { margin: .45rem 0 0; font-size: .92rem; }
+@media (max-width: 720px) {
+  .casebook-header { align-items: flex-start; flex-direction: column; }
+  .casebook-panel { grid-template-columns: minmax(0, 1fr); gap: 1.35rem; }
+  .casebook-break { display: none; }
+}
+@media print {
+  .casebook-tabs { display: none; }
+  .casebook-panel[hidden] { display: grid; }
+  .casebook-panel { break-inside: avoid; }
+}
