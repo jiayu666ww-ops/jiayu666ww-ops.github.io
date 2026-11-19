@@ -68,6 +68,12 @@ h1 { margin: .8rem 0 .5rem; font: 700 clamp(4.2rem, 6.1vw, 6.2rem)/1.12 var(--se
 .title { color: var(--accent); margin: .18rem 0 1rem; font-weight: 600; }
 .title span { color: var(--mute); font-weight: 450; }
 .projects, .side-section dl { margin: 0; }
+.practice { margin-top: 1.4rem; }
+.practice h4 { display: flex; align-items: center; gap: .8rem; margin: 0 0 .9rem; font-size: .94rem; color: var(--accent); }
+.practice h4::after { content: ""; flex: 1; border-top: 1px solid var(--line); }
+.projects dt { font-size: 1.05rem; }
+.projects dt span { display: inline-block; margin-left: .55em; color: var(--mute); font-size: .9rem; font-weight: 450; }
+.projects dd + dd { margin-top: .4rem; }
 dt { font-weight: 650; }
 dd { margin: .1rem 0 0; color: var(--body); }
 dd + dt { margin-top: .75rem; }
@@ -101,32 +107,41 @@ footer i { font-style: normal; color: #9aaa9f; margin: 0 .55rem; }
   .role { padding: 1.25rem 0 1.4rem; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-@page { size: A4; margin: 11mm 12mm; }
+@page { size: A4; margin: 15mm 15mm; }
 @media print {
   :root { --paper: #fff; --ink: #19231f; --body: #26312c; --accent: #773a25; }
-  html, body { font-size: 10pt; line-height: 1.45; }
+  html, body { font-size: 10.25pt; line-height: 1.57; }
   body { background: #fff; }
   .bound { width: 100%; }
   .masthead, .actions, .spotlight, footer, .skip, .contact { display: none; }
   .hero { display: block; padding: 0 0 3.5mm; }
   .eyebrow { font-size: 8pt; }
-  h1 { font-size: 29pt; margin: 2mm 0 1mm; }
+  h1 { font-size: 30pt; margin: 2mm 0 1mm; }
   .profession { font-size: 14pt; margin: 0 0 2mm; }
   .lede { max-width: none; line-height: 1.5; }
-  .print-contact { display: block; margin: 1.5mm 0 0; font-size: 8pt; }
-  .columns { display: grid; grid-template-columns: minmax(0, 2.65fr) minmax(0, 1fr); gap: 6mm; }
-  aside { margin: 0; }
-  .section-heading { font-size: 14pt; padding: 2mm 0; }
-  .role { padding: 2.6mm 0; break-inside: avoid; }
+  .print-contact { display: block; margin: 1.5mm 0 0; font-size: 9pt; }
+  .columns { display: block; }
+  .section-heading { font-size: 15pt; padding: 1.75mm 0; }
+  .role { padding: 3mm 0; break-inside: avoid; }
+  .energy { break-before: page; }
   .role-head { display: flex; gap: 1mm; }
-  .role-head h3 { font-size: 11pt; }
-  .role-head small { font-size: 8.5pt; }
-  .role-head .date, .date { margin: 0; font-size: 7.5pt; }
-  .title { margin: .4mm 0 1.1mm; }
-  dd + dt { margin-top: 1.4mm; }
-  dd { margin-top: 0; }
-  .side-section { padding: 2.6mm 0; break-inside: avoid; }
-  .side-section h3 { font-size: 8pt; margin-bottom: 1mm; }
+  .role-head h3 { font-size: 13pt; }
+  .role-head small { font-size: 9pt; }
+  .role-head .date, .date { margin: 0; font-size: 9pt; }
+  .title { margin: .4mm 0 1.75mm; }
+  .practice { margin-top: 2.5mm; }
+  .practice h4 { margin: 0 0 1.7mm; font-size: 10pt; }
+  .projects dt { font-size: 10.5pt; }
+  .projects dt span { font-size: 9pt; }
+  dd + dt { margin-top: 2mm; }
+  dd { margin-top: .4mm; }
+  .projects dd + dd { margin-top: .5mm; }
+  aside { display: grid; grid-template-columns: 1fr 1fr 1.8fr; gap: 0 5mm; margin: 3mm 0 0; break-inside: avoid; }
+  aside .section-heading { grid-column: 1/-1; }
+  .side-section { padding: 2mm 0; border: 0; }
+  .side-section h3 { font-size: 9pt; margin-bottom: 1mm; }
+  .side-section p, .side-section dt, .side-section dd { font-size: 9pt; }
   .side-section .strong { font-size: 10pt; }
+  .side-section dd + dt { margin-top: .35mm; }
   a { color: inherit; }
 }

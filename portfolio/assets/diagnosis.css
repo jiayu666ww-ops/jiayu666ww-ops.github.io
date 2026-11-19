@@ -1,0 +1,122 @@
+.diagnosis-plate {
+  --dp-ink: #253e39;
+  --dp-line: #536e63;
+  --dp-fault: #ac362b;
+  --dp-paper: #f8f5eb;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  background: var(--dp-paper);
+  color: var(--dp-ink);
+  border: 1px solid #9ba59a;
+  font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+  text-align: left;
+}
+.diagnosis-plate *, .diagnosis-plate *::before, .diagnosis-plate *::after {box-sizing: border-box;}
+.diagnosis-head {padding: 21px clamp(14px, 4%, 27px) 16px;}
+.diagnosis-type {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  color: var(--dp-line);
+  font-size: .8125rem;
+  line-height: 1.3;
+  letter-spacing: .09em;
+}
+.diagnosis-type::before {width: 15px; height: 3px; content: ""; background: var(--dp-fault);}
+.diagnosis-head h2 {margin: 0; color: var(--dp-ink); font: 650 clamp(1.15rem, 2vw, 1.48rem)/1.45 "PingFang SC","Microsoft Yahei",sans-serif; letter-spacing: -.035em;}
+.diagnosis-drawing {
+  padding: 11px clamp(12px, 4%, 27px) 16px;
+  border-block: 1px solid #cbd1c4;
+  background-color: #e9ede1;
+  background-image: linear-gradient(#526e5610 1px, transparent 1px),linear-gradient(90deg,#526e5610 1px,transparent 1px);
+  background-size: 15px 15px;
+}
+.diagnosis-canvas {max-width: 390px; margin-inline: auto; padding-top: 3px;}
+.diagnosis-annotation {
+  width: fit-content;
+  position: relative;
+  margin: 0 0 17px 5%;
+  padding: 0px 4px;
+  color: var(--dp-ink);
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.diagnosis-annotation::after {position:absolute; content:""; left: 45%; top:100%; height:16px; border-left:1px solid var(--dp-ink);}
+.diagnosis-housing {
+  margin-inline: 4%;
+  padding: 0 8px 7px;
+  position: relative;
+  border: 2px solid var(--dp-ink);
+  background: #d5dfcb;
+  box-shadow: 3px 3px 0 #53675c42;
+}
+.diagnosis-roof {
+  height: 7px;
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  bottom: calc(100% + 2px);
+  transform: skewX(-32deg);
+  transform-origin: bottom left;
+  border: 1px solid var(--dp-ink);
+  background: repeating-linear-gradient(95deg, #edf0e5 0px 10px, #adc0ab 10px 12px);
+}
+.diagnosis-service {display: flex; justify-content: flex-end; align-items: center; gap: 3px; height: 10px;}
+.diagnosis-service i {width: 12px; height: 2px; background: var(--dp-line);}
+.diagnosis-racks {display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: clamp(3px,1vw,8px);}
+.diagnosis-rack {
+  display: grid;
+  gap: 3px;
+  padding: 5px clamp(2px,.4vw,5px);
+  border: 1px solid var(--dp-line);
+  background: #bfceba;
+}
+.diagnosis-rack i {
+  display: block;
+  height: clamp(12px, 1.15vw, 17px);
+  position: relative;
+  border: 1px solid #788b78;
+  background: #f3f3e9;
+}
+.diagnosis-rack i::before {
+  position: absolute;
+  content: "";
+  top: 32%;
+  left: 4px;
+  width: 5px;
+  height: 35%;
+  background: #597561;
+  box-shadow: 7px 0 0 #a8b9a6;
+}
+.diagnosis-rack .diagnosis-fault {z-index: 1; border-color: var(--dp-fault); background: var(--dp-fault);}
+.diagnosis-rack .diagnosis-fault::before {background:#f4bdaf; box-shadow:7px 0 0 #ce8072;}
+.diagnosis-rack .diagnosis-fault b {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  color: #fff;
+  font: 800 11px/1 sans-serif;
+}
+.diagnosis-fault::after {position: absolute; content:""; top: 100%; left: 50%; height: 27px; border-left: 2px solid var(--dp-fault);}
+.diagnosis-flow {
+  display: grid;
+  grid-template-columns: auto minmax(8px,1fr) auto minmax(8px,1fr) auto;
+  align-items: center;
+  width: 72%;
+  margin: 10px 0 0 26%;
+  color: var(--dp-ink);
+  font-size: .875rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.diagnosis-flow strong, .diagnosis-flow span {position: relative; padding: 2px 4px; font-weight: 600; white-space: nowrap;}
+.diagnosis-flow strong {color: var(--dp-fault); background: #f9e5da; border: 1px solid var(--dp-fault);}
+.diagnosis-flow span {background: var(--dp-paper); border: 1px solid var(--dp-line);}
+.diagnosis-flow i {position: relative; height: 1px; margin-inline: 2px; background: var(--dp-line);}
+.diagnosis-flow i::after {position: absolute; right: 0; top: -2px; width: 5px; height: 5px; content:""; border-top: 1px solid var(--dp-line); border-right: 1px solid var(--dp-line); transform: rotate(45deg);}
+.diagnosis-plate figcaption {margin:0; padding: 14px clamp(14px, 4%, 27px) 17px; color:#44584b; font-size:.9rem; line-height:1.65; letter-spacing:0; background:var(--dp-paper);}
